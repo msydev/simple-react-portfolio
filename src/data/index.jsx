@@ -5,40 +5,32 @@ import Instagram from "/public/svg/Instagram.jsx";
 import Linkedin from "/public/svg/Linkedin.jsx";
 import Twitter from "/public/svg/Twitter.jsx";
 
-import Phone from '/public/svg/Phone'
-import Email from '/public/svg/Email'
-import Pin from '/public/svg/Pin'
+import Phone from "/public/svg/Phone";
+import Email from "/public/svg/Email";
+import Pin from "/public/svg/Pin";
 
 const data = {
+  logo: <Logo />,
 
-  logo:<Logo/>,
-  
-  ///////////                            
   // Home  //
-  ///////////
   home: {
     name: "Mustafa Salem",
     whatIdo: "I'm a Developer 👨‍💻",
     breif:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio repellat impedit consectetur nesciunt iusto animi.",
-    img:'/imgs/personal-image.png'
-    },
-
-  ///////////////
-  //   About   //
-  ///////////////
-  about:{
-    aboutMe:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsam ea!Accusantium, at. Eligendi, vitae blanditiis laboriosam dolores oditnulla atque magni cumque excepturi molestiae est facere perferendissit optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt, impedit cum omnis quisquam commodi ipsum voluptatem qui provident porro accusantium quo optio deleniti eveniet asperiores autem voluptate sunt facilis.",
-    img:'/imgs/personal-image-about.jpg',
-    cv:'/cv.pdf'
+    img: "/imgs/personal-image.png",
   },
-  ///////////////////
-  //   END About   //
-  ///////////////////
 
-  ///////////////////////////////
+  //   About   //
+  about: {
+    aboutMe:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsam ea!Accusantium, at. Eligendi, vitae blanditiis laboriosam dolores oditnulla atque magni cumque excepturi molestiae est facere perferendissit optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt, impedit cum omnis quisquam commodi ipsum voluptatem qui provident porro accusantium quo optio deleniti eveniet asperiores autem voluptate sunt facilis.",
+    img: "/imgs/personal-image-about.jpg",
+    cv: "/cv.pdf",
+  },
+  //   END About   //
+
   //   Portfolio (Projects)    //
-  ///////////////////////////////
   portfolio: [
     {
       id: 1,
@@ -112,15 +104,9 @@ const data = {
       },
     },
   ],
-  ////////////////////////
   //   End Portfolio    //
-  ////////////////////////
 
-
-
-  ////////////////////////
   //   Services         //
-  ////////////////////////
   services: [
     {
       id: 1,
@@ -143,43 +129,32 @@ const data = {
       desc: "lorem ipsum skflj sidjf eih sdf ids",
     },
   ],
-  ////////////////////////
   //   End Services     //
-  ////////////////////////
 
-  
-  /////////////////////////////
   //   Contact (Adresses)    //
-  /////////////////////////////
-  contact:[
+  contact: [
     {
-        id:1,
-        title:'Based in',
-        value:'Iraq, Baghdad',
-        icon:<Pin/>
+      id: 1,
+      title: "Based in",
+      value: "Iraq, Baghdad",
+      icon: <Pin />,
     },
     {
-        id:2,
-        title:'Phone Number',
-        value:'07706357206',
-        icon:<Phone/>
+      id: 2,
+      title: "Phone Number",
+      value: "07706357206",
+      icon: <Phone />,
     },
     {
-        id:3,
-        title:'Email Address',
-        value:'mustafasalem2314@gmail.com',
-        icon:<Email/>
+      id: 3,
+      title: "Email Address",
+      value: "mustafasalem2314@gmail.com",
+      icon: <Email />,
     },
-],
-  ////////////////////
+  ],
   //  END Contact   //
-  ////////////////////
 
-
-
-  ///////////////////
   //  Social Media //
-  ///////////////////
   socialMedia: [
     {
       name: "Behance",
@@ -188,7 +163,7 @@ const data = {
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://Instagram.com/msy_dev",
       icon: <Instagram />,
     },
     {
@@ -202,9 +177,7 @@ const data = {
       icon: <Twitter />,
     },
   ],
-  ///////////////////////
   //  END Social Media //
-  ///////////////////////
 };
 
 export default data;

@@ -1,8 +1,8 @@
 import React from "react";
-import ScrollDown from "../ScrollDown";
-import Button from "../Button";
+import ScrollDown from "../../ScrollDown";
+import Button from "../../Button";
 
-function Home({ data }) {
+function Index({ data }) {
   return (
     <main id="home" className="relative w-full h-screen  overflow-hidden">
       <div className="relative lg:flex-center-between flex-row-reverse h-full lg:px-28">
@@ -51,4 +51,4 @@ function Home({ data }) {
   );
 }
 
-export default Home;
+export default Index;

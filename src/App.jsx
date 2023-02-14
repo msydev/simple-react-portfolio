@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NavBar from "./components/NavBar";
-import Home from "./components/layout/Home";
-import About from "./components/layout/About";
+import Home from "./components/layout/home";
+import About from "./components/layout/about";
 import Portfolio from './components/layout/portfolio'
 import Services from './components/layout/services'
 import Contact from './components/layout/contact' 
@@ -12,7 +12,6 @@ import data from './data'
 function App() {
   
   return (
-    
     <div className="App bg-slate-900 relative ">
         <NavBar data={data} />
         <Home data={data.home} />

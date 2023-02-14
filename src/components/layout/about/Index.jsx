@@ -1,7 +1,7 @@
 import React from "react";
-import SocialMedia from "../SocialMedia";
-import Button from "../Button";
-function About({data}) {
+import SocialMedia from "../../SocialMedia";
+import Button from "../../Button";
+function Index({data}) {
   
   return (
     <div id="about" className="section padding lg:flex items-start justify-center lg:gap-10">
@@ -32,4 +32,4 @@ function About({data}) {
   );
 }
 
-export default About;
+export default Index;
