@@ -1,0 +1,14 @@
+<div className={`absolute top-0 h-[2px] w-full bg-white rounded-lg duration-700  ${isMenuOpen?' top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45':''} `}></div>
+<div className={`absolute bottom-0 h-[2px] w-full bg-white rounded-lg duration-700  ${isMenuOpen?' top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45':''} `}></div>
+eb2a_31715316@uobdorms.eb2a.com
+
+
+      {/* Glowing Balls */}
+      
+      <div className="fixed h-screen w-full top-0 cursor-none select-none bg-primary-color z-10">
+        <div className=" relative h-full w-full ">
+
+      <div className="glowing-ball bg-purple  left-0 -translate-x-1/2 -translate-y-1/2 animate-[upAndDown_40s_ease-in-out_infinite_alternate]"></div>
+      <div className="glowing-ball bg-blue right-0 translate-x-1/2 -translate-y-1/2 animate-[upAndDown_40s_ease-in-out_infinite_alternate-reverse]"></div>
+        </div>
+      </div>
