@@ -10,28 +10,23 @@ function Menu({ projects }) {
   const handleOpenModal = (project) => {
     setIsModalOpen((previousValue) => !previousValue);
     setModalData(project);
-    preventBackgroundScroll()
+    preventBackgroundScroll();
   };
   const handleCloseModal = () => {
-      setIsModalOpen((previousValue) => !previousValue);
-      allowBackgroundScroll()
+    setIsModalOpen((previousValue) => !previousValue);
+    allowBackgroundScroll();
   };
 
   const preventBackgroundScroll = () =>
     document.body.classList.add("overflow-hidden");
-  
-    const allowBackgroundScroll = () =>
+
+  const allowBackgroundScroll = () =>
     document.body.classList.remove("overflow-hidden");
 
   return (
     <section
       className={`md:flex-center-center gap-6 flex-wrap pt-4 bg-blend-darken `}
     >
-      {/* <Modal styles={`${isModalOpen?
-      ' visible opacity-100':'opacity-0 invisible'}`}
-      handleCloseModal={handleCloseModal}
-      projectData={modalData}
-      /> */}
       {isModalOpen ? (
         <Modal handleCloseModal={handleCloseModal} projectData={modalData} />
       ) : null}

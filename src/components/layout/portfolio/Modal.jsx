@@ -8,6 +8,13 @@ function Modal({
   handleCloseModal,
   projectData: { title, img, info, externalLink },
 }) {
+  const modal = useRef(null)
+  useEffect(() => {
+    setTimeout(() => {
+      modal.current.classList.add('translate-y-0','opacity-100')
+    });
+  }, [])
+  
   return (
     <main
       className={`modal`}
@@ -18,11 +25,17 @@ function Modal({
       }}
     >
       {/* modal */}
-      <section className=" w-4/5 h-4/5 pb-10 pt-12 bg-slate-900 rounded-lg overflow-hidden relative">
+      <section ref={modal} className="transition-all duration-300 translate-y-10 opacity-0 w-4/5 h-4/5 pb-10 pt-12 bg-slate-900 rounded-lg overflow-hidden relative">
         {/* close-btn */}
         <Button
           styles={"absolute top-0 right-0 p-4 hover:bg-slate-800"}
-          onClick={handleCloseModal}
+          onClick={()=>{
+            // console.log(modal.current)
+            modal.current.classList.remove('translate-y-0','opacity-100');
+            setTimeout(() => {
+              handleCloseModal()
+            }, 300);
+          }}
         >
           <Close styles={"fill-white/60"} />
         </Button>
