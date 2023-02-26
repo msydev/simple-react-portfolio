@@ -1,6 +1,6 @@
 ![thumbnail](https://user-images.githubusercontent.com/108448084/218619627-cf52dfc3-b161-484d-bdcc-a2ef2b848be7.PNG)
 
-### 👀 Live Demo - https://jazzy-fenglisu-1bd823.netlify.app/
+### 👀 Live Demo - https://dashing-mandazi-3833e4.netlify.app/
 
 
 ### Sections
