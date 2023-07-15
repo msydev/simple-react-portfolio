@@ -7,7 +7,7 @@ function NavBar({data}) {
   const [offset, setOffset] = useState(0);
 
     useEffect(() => {
-        const onScroll = () => setOffset(window.pageYOffset);
+        const onScroll = () => setOffset(window.scrollY);
         // clean up code
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
@@ -21,7 +21,8 @@ function NavBar({data}) {
   
   const openMenu = ()=>{
     setIsMenuOpen((prevCheck) => !prevCheck);
-    document.body.classList.add('overflow-hidden'); // to prevent scrolling when mobile menue is open
+    document.body.classList.toggle('overflow-hidden'); // to prevent scrolling when mobile menue is open
+    console.log('test*');
   }
 
   

@@ -5,7 +5,7 @@ function SocialMedia({styles,data}) {
     <div className={styles}>
         {data.map(item=>{
           const {name, href, icon} = item;
-          return <a href={href} key={name}>{icon}</a>
+          return <a  href={href} key={name}>{icon}</a>
         })}
     </div>
   )
