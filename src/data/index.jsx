@@ -14,8 +14,8 @@ const data = {
 
   // Home  //
   home: {
-    name: "Mustafa Salem",
-    whatIdo: "I'm a Developer 👨‍💻",
+    name: "mustafa salem",
+    whatIdo: "I'm a Web Developer 👨‍💻",
     breif:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio repellat impedit consectetur nesciunt iusto animi.",
     img: "/imgs/personal-image.png",
